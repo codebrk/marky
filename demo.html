@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marky Simple Include</title>
+    <link rel="stylesheet" href="dist/master.css">
+
+    <style>
+        #root {
+            position: absolute;
+            width: 1000px;
+            height: 400px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+<script src="dist/development.js"></script>
+<script>
+    new Marky(document.getElementById("root"), {
+        lineNumbers: false
+    });
+</script>
+</body>
+</html>
